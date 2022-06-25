@@ -1,0 +1,163 @@
+@font-face {
+    font-family: roboto-regular;
+    src: url('./fonts/Courgette-Regular.ttf');
+}
+
+* {
+    font-family: "roboto-regular";
+}
+
+body {
+    background: url("images/bg.png");
+}
+.welcomeCover{
+    z-index: 99999;
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom:0;
+    height: 100vh;
+    right: 0;
+      background: url("images/welcomeBg.jpg");
+        background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+        justify-content: center;
+        transition: 2s all ease;
+}
+.welcomeCover .songPlayBtn{
+width: 150px;
+height: 150px;
+}
+canvas#heartFalling {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* height: 100%; */
+}
+
+audio {
+    position: absolute;
+    opacity: 0;
+}
+
+header>img,
+footer>img {
+    width: 100%;
+}
+
+.firstSec {
+    text-align: center;
+}
+
+.firstSec img.myhashri {
+    width: 300px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "roboto-regular";
+    font-size: 1.5rem !important;
+    color: #c4942d;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.slide .carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto;
+    margin-left: 4px;
+    margin-top: 0;
+}
+
+.carousel-inner .carousel-item {
+    padding: 8px;
+}
+
+.slide {
+    padding: 20px;
+}
+
+.slide:before {
+    background-image: url(images/sliderframe.png);
+    position: absolute;
+    left: 0px;
+    top: 0;
+    display: inline-block;
+    content: '';
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: calc(100% + 0px) auto;
+    z-index: 99;
+    background-repeat: no-repeat;
+}
+
+.quoteSec .quote,
+.quoteSec p {
+    color: #fff;
+}
+
+.quoteSec p strong {
+    color: #d0a850;
+}
+
+.carousel-item .quoteSec {
+    margin-top: 30px;
+    z-index: 9999;
+    width: 100%;
+    display: inline-block;
+}
+
+.frame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    display: inline-block;
+}
+
+.frame img {
+    width: 100%;
+}
+
+.secondSec .couplePic {
+    position: relative;
+    padding: 20px 0;
+    width: 280px;
+    margin: auto;
+}
+
+.secondSec .couplePic .name {
+    position: absolute;
+    color: #fff;
+}
+
+.secondSec .couplePic>img {
+    width: 100%;
+}
+
+.secondSec .couplePic .name.mouni {
+    top: 17px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    left: -30px;
+}
+
+.secondSec .couplePic .name.durga {
+    bottom: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    right: -30px;
+}
